@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Navbar</title>
+    <title>Projects | Pranav P K</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .head{
-        border: 50px;
-        padding-top:10% ;
-        padding-right:10% ;
-        padding-bottom: 10%;
-        padding-left: 10%;
-    }
-    .dec{
-         padding-top:10% ;
-        padding-right:10% ;
-        padding-bottom: 10%;
-        padding-left: 10%;
-    }
-    #project-list{
-        padding: auto;
-    }
-    #pro1{
-        padding-top: 2%;
-    }
-</style>
+
 <body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="index.html">PRANAV P K</a>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">PRANAV</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-    <div class="head">
-        <h1>Projects</h1>
-    </div>
-    <div class="dec">
-        <ul>
-                <li id="pro1">Like Me Beauty Hub – Frontend Web Application <a href="">></a></li>
-                <li id="pro2">Pothole Detection System using YOLOv7 & Flutter</li>
-                <li id="pro3">Online Auction System</li>
-                <li id="pro4">Optera e-commerce webapplication</li>
-            </div>
-            
-        </ul>
-    </div>
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Projects</p>
+            <h1>Work that combines UI, backend logic, and practical problem solving.</h1>
+        </section>
+
+        <section class="section project-list">
+            <article class="project-row">
+                <div>
+                    <span>Frontend Web Application</span>
+                    <h2>Like Me Beauty Hub</h2>
+                </div>
+                <p>A polished frontend for a beauty brand with responsive layouts and service-focused pages.</p>
+            </article>
+
+            <article class="project-row">
+                <div>
+                    <span>YOLOv7 + Flutter</span>
+                    <h2>Pothole Detection System</h2>
+                </div>
+                <p>A detection workflow using computer vision and a mobile interface for road issue reporting.</p>
+            </article>
+
+            <article class="project-row">
+                <div>
+                    <span>Django Concept</span>
+                    <h2>Online Auction System</h2>
+                </div>
+                <p>A web app concept for listings, bidding flow, user handling, and database-backed auction records.</p>
+            </article>
+
+            <article class="project-row">
+                <div>
+                    <span>E-commerce</span>
+                    <h2>Optera</h2>
+                </div>
+                <p>An e-commerce web application concept focused on product browsing and a simple buying journey.</p>
+            </article>
+        </section>
+    </main>
 </body>
+
 </html>
