@@ -15,6 +15,12 @@
     <header class="site-header">
         <nav class="navbar">
             <a class="logo" href="index.html">PRANAV P K</a>
+            <input class="nav-toggle" type="checkbox" id="nav-toggle-projects" aria-label="Toggle navigation menu">
+            <label class="menu-toggle" for="nav-toggle-projects">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -32,40 +38,104 @@
             <h1>Work that combines UI, backend logic, and practical problem solving.</h1>
         </section>
 
-        <section class="section project-list">
-            <article class="project-row">
-                <div>
-                    <span>Frontend Web Application</span>
-                    <h4>Like Me Beauty Hub</h4>
-                    <a class="more" href="https://likemee.vercel.app/">link</a>
+        <section class="section project-showcase">
+            <article class="project-feature">
+                <figure class="project-screen">
+                    <img src="img/projects/likeme-desktop.png" alt="Like Me Beauty Hub desktop screenshot" loading="lazy" onerror="this.hidden=true">
+                    <figcaption>Like Me Beauty Hub screenshot</figcaption>
+                </figure>
+
+                <div class="project-copy">
+                    <span class="project-type">Frontend Web Application</span>
+                    <h2>Like Me Beauty Hub</h2>
+                    <p>A responsive salon website with service sections, gallery, testimonials, and a multi-step booking flow.</p>
+
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>Node.js</span>
+                    </div>
+
+                    <details class="project-details">
+                        <summary>Project details</summary>
+                        <p style="font-size: 14px;">Developed a responsive web application for Like Me Family Beauty Hub, a unisex beauty salon based in Kozhikode, currently deployed on Vercel for live preview. Built using React, TypeScript, Tailwind CSS, and Node.js, the application delivers a modern and scalable solution with a strong focus on performance and user experience. Designed an engaging UI featuring an animated hero section, services showcase, image gallery, testimonials carousel, and a multi-step booking system. Implemented a Node.js and Express backend with RESTful APIs to handle bookings and contact form submissions, along with Nodemailer integration for automated email confirmations. Ensured SEO optimization, accessibility compliance, and a mobile-first responsive design.</p>
+                    </details>
+
+                    <div class="project-actions">
+                        <a class="btn secondary" href="https://likemee.vercel.app/" target="_blank" rel="noreferrer">Live Project</a>
+                    </div>
                 </div>
-                <p>A polished frontend for a beauty brand with responsive layouts and service-focused pages.</p>
             </article>
 
-            <article class="project-row">
-                <div>
-                    <span>YOLOv7 + Flutter</span>
-                    <h2>Pothole Detection System</h2>
-                </div>
-                <p>A detection workflow using computer vision and a mobile interface for road issue reporting.</p>
-            </article>
+             <article class="project-feature">
+                <figure class="project-screen">
+                    <img src="img/projects/optera-desktop.png" alt="Optera desktop screenshot" loading="lazy" onerror="this.hidden=true">
+                    <figcaption>Optera screenshot</figcaption>
+                </figure>
 
-            <article class="project-row">
-                <div>
-                    <span>Django Concept</span>
-                    <h2>Online Auction System</h2>
-                </div>
-                <p>A web app concept for listings, bidding flow, user handling, and database-backed auction records.</p>
-            </article>
-
-            <article class="project-row">
-                <div>
-                    <span>E-commerce</span>
+                <div class="project-copy">
+                    <span class="project-type">E-commerce</span>
                     <h2>Optera</h2>
-                    <a class="more" href="https://optera-web.onrender.com">link</a>
+                    <p>A Django e-commerce application with authentication, product browsing, cart, checkout, and order tracking.</p>
+
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>SQLite</span>
+                        <span>HTML/CSS</span>
+                    </div>
+
+                    <details class="project-details">
+                        <summary>Project details</summary>
+                        <p  style="font-size: 14px;">OPTERA is a Django-based e-commerce web application developed to simulate a complete online shopping experience. It features secure user authentication, product browsing with detailed views, cart management, and a seamless checkout process with address handling and a simulated payment system. The application includes real-time order tracking with status updates such as placed, processing, and delivered. An integrated admin panel allows efficient management of products, users, and orders, while product inventory is automatically updated after successful transactions.</p>
+                    </details>
+
+                    <div class="project-actions">
+                        <a class="btn secondary" href="https://optera-web.onrender.com" target="_blank" rel="noreferrer">Live Project</a>
+                    </div>
                 </div>
-                <p>An e-commerce web application concept focused on product browsing and a simple buying journey.</p>
             </article>
+
+            <article class="project-feature">
+
+                <div class="project-copy">
+                    <span class="project-type">YOLOv7 + Flutter</span>
+                    <h2>Pothole Detection System</h2>
+                    <p>A computer vision workflow with a mobile interface for real-time road hazard detection and alerts.</p>
+
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span>Python</span>
+                        <span>YOLOv7</span>
+                        <span>Flutter</span>
+                        <span>Roboflow</span>
+                    </div>
+
+                    <details class="project-details">
+                        <summary>Project details</summary>
+                        <p style="font-size: 14px;">Designed and developed a mobile application for real-time pothole detection by integrating the YOLOv7 deep learning model with a Flutter-based frontend. Created and annotated a custom dataset using Roboflow to improve detection accuracy, and trained the model using Python for precise identification of potholes with labeled outputs. Implemented a real-time alert system to notify drivers about detected road hazards, enhancing safety and awareness. The application features an intuitive interface built with Flutter, ensuring smooth interaction between the user and the detection system.</p>
+                    </details>
+                </div>
+    
+                <div class="project-copy">
+                    <span class="project-type">Full-Stack Web Application</span>
+                    <h2>Online Auction System</h2>
+                    <p>An auction platform for product uploads, bidding, authentication, and product data management.</p>
+
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span>React</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                    <details class="project-details">
+                        <summary>Project details</summary>
+                        <p style="font-size: 14px;">Developed a full-stack online auction platform that enables users to upload, manage, and bid on products in real time. Designed a responsive and user-friendly interface using React, ensuring smooth navigation and an intuitive user experience. Built a robust backend with Java to handle auction logic, user authentication, and secure data processing. Utilized MySQL for efficient storage and retrieval of user and product data. Integrated frontend and backend through RESTful APIs to ensure seamless communication and functionality across the application.</p>
+                    </details>
+                </div>
+            </article>
+
         </section>
     </main>
 
@@ -86,19 +156,30 @@
             <div class="footer-contact">
                 <a href="mailto:pranavpk067@gmail.com">
                     <span class="contact-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 6h16v12H4z"></path>
+                            <path d="m4 7 8 6 8-6"></path>
+                        </svg>
                     </span>
                     pranavpk067@gmail.com
                 </a>
                 <a href="https://github.com/Prnvpk" target="_blank" rel="noreferrer">
                     <span class="contact-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0 1 12 6.99c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.58c0 .27.18.58.69.48A10 10 0 0 0 12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0 1 12 6.99c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.58c0 .27.18.58.69.48A10 10 0 0 0 12 2z">
+                            </path>
+                        </svg>
                     </span>
                     GitHub
                 </a>
                 <a href="https://www.linkedin.com/in/pranavpk067/" target="_blank" rel="noreferrer">
                     <span class="contact-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><path d="M6.94 8.9H3.75v10.35h3.19V8.9zM5.35 4.75a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7zM20.25 13.3c0-2.78-1.49-4.08-3.48-4.08a3 3 0 0 0-2.7 1.48V8.9h-3.06v10.35h3.18v-5.12c0-1.35.26-2.66 1.93-2.66 1.65 0 1.67 1.54 1.67 2.75v5.03h3.18v-5.95h-.72z"></path></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M6.94 8.9H3.75v10.35h3.19V8.9zM5.35 4.75a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7zM20.25 13.3c0-2.78-1.49-4.08-3.48-4.08a3 3 0 0 0-2.7 1.48V8.9h-3.06v10.35h3.18v-5.12c0-1.35.26-2.66 1.93-2.66 1.65 0 1.67 1.54 1.67 2.75v5.03h3.18v-5.95h-.72z">
+                            </path>
+                        </svg>
                     </span>
                     LinkedIn
                 </a>
