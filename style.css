@@ -401,6 +401,94 @@ a {
     border-color: var(--accent);
 }
 
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    background: #143d2b;
+    color: #ffffff;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    gap: 28px;
+    width: min(1080px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 34px 0;
+}
+
+.footer-logo {
+    display: inline-flex;
+    color: #ffffff;
+    font-family: var(--logo-font);
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.site-footer p {
+    max-width: 380px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 14px;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a,
+.footer-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #ffffff;
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.contact-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+}
+
+.contact-icon svg path {
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.footer-contact a:nth-child(2) svg path,
+.footer-contact a:nth-child(3) svg path {
+    fill: currentColor;
+    stroke: none;
+}
+
 @media (max-width: 820px) {
     .navbar {
         align-items: flex-start;
@@ -429,7 +517,8 @@ a {
     .project-grid,
     .skill-grid,
     .timeline-grid,
-    .project-row {
+    .project-row,
+    .footer-inner {
         grid-template-columns: 1fr;
     }
 }
@@ -438,7 +527,8 @@ a {
     .navbar,
     .section,
     .page-hero,
-    .hero-content {
+    .hero-content,
+    .footer-inner {
         width: min(100% - 28px, 1080px);
     }
 
@@ -463,4 +553,8 @@ a {
     .section {
         padding: 54px 0;
     }
+}
+.more{
+    text-decoration: none;
+    padding-left: 20px;
 }
