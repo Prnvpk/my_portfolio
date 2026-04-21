@@ -12,6 +12,7 @@
 :root {
     --font: "Inter", "Segoe UI", Arial, sans-serif;
     --logo-font: "Nothing Ndot", "Inter", "Segoe UI", Arial, sans-serif;
+    --header-height: 74px;
     --bg: #f7f8f5;
     --surface: #ffffff;
     --text: #151716;
@@ -31,6 +32,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 96px;
 }
 
 body {
@@ -66,7 +68,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    min-height: 74px;
+    min-height: var(--header-height);
 }
 
 .logo {
@@ -127,10 +129,15 @@ a {
 .hero {
     display: flex;
     align-items: flex-end;
-    min-height: calc(82vh - 74px);
+    min-height: calc(82vh - var(--header-height));
     border-bottom: 1px solid var(--line);
     background: linear-gradient(135deg, var(--bg) 0%, #ffffff 52%, var(--soft) 100%);
 }
+
+.scroll-section {
+    scroll-margin-top: 96px;
+}
+
 
 .hero-content {
     padding: 92px 0 72px;
@@ -554,6 +561,10 @@ a {
     gap: 0;
 }
 
+.qualification-section {
+    border-top: 1px solid var(--line);
+}
+
 .project-feature {
     display: grid;
     grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
@@ -720,6 +731,11 @@ a {
 
 .contact-links a:hover {
     border-color: var(--accent);
+}
+
+.contact-section,
+.contact-form-section {
+    border-top: 1px solid var(--line);
 }
 
 .contact-form {
