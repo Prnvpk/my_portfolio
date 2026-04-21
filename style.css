@@ -138,9 +138,13 @@ a {
     scroll-margin-top: 96px;
 }
 
+#home.scroll-section {
+    scroll-margin-top: 0;
+}
+
 
 .hero-content {
-    padding: 92px 0 72px;
+    padding: 52px 0 72px;
 }
 
 .eyebrow {
@@ -1002,7 +1006,7 @@ a {
     }
 
     .hero-content {
-        padding: 68px 0 46px;
+        padding: 40px 0 46px;
     }
 
     .hero h1,

@@ -38,9 +38,19 @@ window.addEventListener("load", updateActiveSection);
 window.addEventListener("resize", updateActiveSection);
 
 navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (event) => {
         if (navToggle) {
             navToggle.checked = false;
+        }
+
+        if (link.getAttribute("href") === "#home") {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            setActiveLink("home");
+            return;
         }
 
         requestAnimationFrame(updateActiveSection);
